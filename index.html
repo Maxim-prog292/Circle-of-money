@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Финансовая грамотность: круг денег</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app" id="app" aria-labelledby="screenTitle">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Финансовая грамотность</p>
+          <h1 id="screenTitle">Как появились деньги</h1>
+        </div>
+        <p class="lead">
+          Деньги выросли из нужды считать, обменивать и копить. За каждым шагом -
+          сотни лет поиска удобного решения.
+        </p>
+      </header>
+
+      <section class="stage" aria-label="Круг денег разных периодов">
+        <div class="ring" aria-hidden="true"></div>
+        <div class="inner-ring" aria-hidden="true"></div>
+
+        <div class="ruble-core" aria-hidden="true">
+          <span>₽</span>
+        </div>
+
+        <button class="money-node" type="button" data-index="0" style="--angle: -90deg;">
+          <span class="icon-shell" aria-hidden="true">
+            <img src="assets/01-shell.png" alt="">
+          </span>
+          <strong>Ракушка</strong>
+        </button>
+
+        <button class="money-node" type="button" data-index="1" style="--angle: -38.571deg;">
+          <span class="icon-shell" aria-hidden="true">
+            <img src="assets/02-hide.png" alt="">
+          </span>
+          <strong>Шкура</strong>
+        </button>
+
+        <button class="money-node" type="button" data-index="2" style="--angle: 12.857deg;">
+          <span class="icon-shell" aria-hidden="true">
+            <img src="assets/03-ingot.png" alt="">
+          </span>
+          <strong>Слиток</strong>
+        </button>
+
+        <button class="money-node" type="button" data-index="3" style="--angle: 64.286deg;">
+          <span class="icon-shell" aria-hidden="true">
+            <img src="assets/04-coin.png" alt="">
+          </span>
+          <strong>Монета</strong>
+        </button>
+
+        <button class="money-node" type="button" data-index="4" style="--angle: 115.714deg;">
+          <span class="icon-shell" aria-hidden="true">
+            <img src="assets/05-jar.png" alt="">
+          </span>
+          <strong>Кувшин</strong>
+        </button>
+
+        <button class="money-node" type="button" data-index="5" style="--angle: 167.143deg;">
+          <span class="icon-shell" aria-hidden="true">
+            <img src="assets/06-banknote.png" alt="">
+          </span>
+          <strong>Ассигнация</strong>
+        </button>
+
+        <button class="money-node" type="button" data-index="6" style="--angle: 218.571deg;">
+          <span class="icon-shell" aria-hidden="true">
+            <img src="assets/07-card.png" alt="">
+          </span>
+          <strong>Карта</strong>
+        </button>
+      </section>
+
+      <div class="modal-overlay" id="modalOverlay" hidden>
+        <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+          <p class="modal-count" id="modalCount">1 / 7</p>
+          <h2 id="modalTitle">Товарные деньги</h2>
+          <p id="modalText"></p>
+          <button class="close-button" type="button" id="closeModalButton">Закрыть</button>
+        </article>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
